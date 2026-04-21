@@ -23,7 +23,7 @@ export const buildDrinksList = (content) => {
     drinkContainer.append(drinkRating);
 
     const moreInfoLink = document.createElement("a");
-    moreInfoLink.href = `${baseUrl}/${drink.id}`;
+    moreInfoLink.href = `./drink.html?id=/${drink.id}`;
     moreInfoLink.textContent = "Details";
     drinkContainer.append(moreInfoLink);
   });
