@@ -7,4 +7,10 @@
 body {
     background-color: gray;
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.drink-image-list {
+    max-width: 9rem;
+
 }
