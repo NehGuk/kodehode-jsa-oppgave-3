@@ -4,7 +4,6 @@ const mainSection = document.querySelector("#main-section");
 
 export const buildDrinksList = (content) => {
   content.forEach((drink) => {
-    console.log(drink);
     const drinkContainer = document.createElement("article");
     mainSection.append(drinkContainer);
 
