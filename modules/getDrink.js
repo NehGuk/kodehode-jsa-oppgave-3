@@ -5,7 +5,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const drinkUrl = `${baseUrl}${id}`;
 
-const getDrink = async () => {
+export const getDrink = async () => {
   try {
     const response = await fetch(drinkUrl);
     const data = await response.json();
@@ -14,4 +14,5 @@ const getDrink = async () => {
     console.error("Oops, here's an error:", error);
   }
 };
+
 getDrink();
