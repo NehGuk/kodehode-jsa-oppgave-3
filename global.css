@@ -43,7 +43,8 @@ footer {
 }
 
 footer a, footer p, footer h4 {
-  color: var(--background-color)
+  color: var(--background-color);
+  margin-bottom: 1rem;
 
 }
 
