@@ -1,2 +1,2 @@
-import { getDrinks } from "./scripts/getDrinks.js";
+import { getDrinks } from "./modules/getDrinks.js";
 getDrinks();

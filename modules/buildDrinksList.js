@@ -20,6 +20,7 @@ export const buildDrinksList = (content) => {
 
     const moreInfoLink = document.createElement("a");
     moreInfoLink.href = `./drink.html?id=/${drink.id}`;
+    moreInfoLink.classList.add("btn");
     moreInfoLink.textContent = "Details";
 
     drinkContainer.append(drinkImage, drinkName, drinkRating, moreInfoLink);

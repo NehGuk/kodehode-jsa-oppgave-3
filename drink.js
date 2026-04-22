@@ -1,3 +1,3 @@
-import {getDrink} from "./scripts/getDrink.js"
+import {getDrink} from "./modules/getDrink.js"
 getDrink()
 
