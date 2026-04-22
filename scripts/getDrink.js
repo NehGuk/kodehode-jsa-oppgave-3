@@ -14,5 +14,3 @@ export const getDrink = async () => {
     console.error("Oops, here's an error:", error);
   }
 };
-
-getDrink();
