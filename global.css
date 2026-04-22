@@ -65,14 +65,37 @@ h2, h3, h4, p, a {
   color: var(--accent-color)
 }
 
-.logo-header {
-  max-width: 19rem;
-}
-
 .btn {
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: 600;
   padding: 1rem 3rem;
   display: inline-block;
+}
+
+.logo-header {
+  max-width: 19rem;
+}
+
+/* shake animation for logo */
+@keyframes shake {
+0% { transform: translateX(0) rotate(0); }
+15% { transform: translateX(-3px) rotate(-1deg); }
+30% { transform: translateX(3px) rotate(1deg); }
+45% { transform: translateX(-2px) rotate(-0.5deg); }
+60% { transform: translateX(2px) rotate(0.5deg); }
+75% { transform: translateX(-1px) rotate(-0.3deg); }
+100% { transform: translateX(0) rotate(0); }
+}
+
+.logo-header {
+display: inline-block;            
+transition: transform 120ms ease; 
+}
+
+.logo-header:hover,
+.logo:focus {
+animation: shake 420ms ease-in-out;
+animation-iteration-count: 1;
+/* will-change: transform; */
 }
