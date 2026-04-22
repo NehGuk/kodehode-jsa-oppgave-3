@@ -9,12 +9,24 @@
 
 }
 .drink-container {
-  border: 1px solid var(--primary-color);
-  padding: 1rem;
+  clip-path: polygon(0 0, calc(100% - 2rem) 0, 100% 2rem, 100% 100%, 0 100%);
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.drink-container img {
+  clip-path: polygon(0 0, calc(100% - 2rem) 0, 100% 2rem, 100% 100%, 0 100%);
+}
+
+.drink-container h3, .drink-container p {
+  padding: 0 0 .3rem 1rem;
+}
+
+.drink-container .btn {
+  max-width: 9rem;
+  margin: 0 0 1rem 1rem;
 }
 
 .drink-image-list {
@@ -24,10 +36,6 @@
 
 }
 
-.drink-container .btn {
-  margin-top: auto;
-  max-width: 9rem;
-}
 
 .extra-info {
   text-align: center;
