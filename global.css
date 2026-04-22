@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+.logo-header {
+  max-width: 19rem;
+}
+
 .btn {
   background-color: var(--primary-color);
   color: var(--background-color);
