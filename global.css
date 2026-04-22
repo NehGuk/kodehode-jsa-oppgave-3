@@ -24,19 +24,6 @@ body {
     min-height: 100dvh;
 }
 
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.btn {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  font-weight: 600;
-  padding: 1rem 3rem;
-  display: inline-block;
-}
-
 header {
   text-align: center;
   background-color: var(--primary-color);
@@ -48,4 +35,17 @@ footer {
   background-color: var(--secondary-color);
   text-align: center;
   padding: 3rem;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-weight: 600;
+  padding: 1rem 3rem;
+  display: inline-block;
 }
