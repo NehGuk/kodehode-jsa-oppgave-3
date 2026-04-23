@@ -10,18 +10,22 @@ export const buildDrink = (content) => {
   drinkName.textContent = content.name;
 
   const drinkRating = document.createElement("p");
-  drinkRating.textContent = `Rating: ${content.rating}`;
+  drinkRating.classList.add("drink-rating")
+  drinkRating.innerHTML = `<span class="field">Rating:</span> ${content.rating}`;
 
   const drinkCountryOfOrigin = document.createElement("p");
-  drinkCountryOfOrigin.textContent = `Country of origin: ${content.country_of_origin}`;
+  drinkCountryOfOrigin.classList.add("drink-country-of-origin")
+  drinkCountryOfOrigin.innerHTML = `<span class="field">Country of origin: </span> ${content.country_of_origin}`;
 
   const containsCoffee = document.createElement("p");
-  containsCoffee.textContent = `Caffeinated: ${content.contains_coffee ? "Yes" : "No"}`;
+  containsCoffee.classList.add("drink-contains-coffee")
+  containsCoffee.innerHTML = `<span class="field">Caffeinated:</span> ${content.contains_coffee ? "Yes" : "No"}`;
 
   const drinkDescription = document.createElement("p");
-  drinkDescription.textContent = content.description;
+  drinkDescription.classList.add("drink-description")
+  drinkDescription.textContent = `${content.description}`;
 
   drinkHeader.append(drinkName);
-  drinkContainer.append(drinkImage, drinkRating, drinkCountryOfOrigin, containsCoffee, drinkDescription);
+  drinkContainer.append(drinkImage, drinkCountryOfOrigin, containsCoffee, drinkRating, drinkDescription);
   document.title = `${drinkName.textContent} | CMR`
 };
