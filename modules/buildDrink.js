@@ -1,3 +1,4 @@
+const drinkHeader = document.querySelector("#drink-header")
 const drinkContainer = document.querySelector("#drink-container");
 
 export const buildDrink = (content) => {
@@ -20,5 +21,7 @@ export const buildDrink = (content) => {
   const drinkDescription = document.createElement("p");
   drinkDescription.textContent = content.description;
 
-  drinkContainer.append(drinkImage, drinkName, drinkRating, drinkCountryOfOrigin, containsCoffee, drinkDescription);
+  drinkHeader.append(drinkName);
+  drinkContainer.append(drinkImage, drinkRating, drinkCountryOfOrigin, containsCoffee, drinkDescription);
+  document.title = `${drinkName.textContent} | CMR`
 };

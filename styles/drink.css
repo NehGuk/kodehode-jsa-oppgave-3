@@ -3,3 +3,12 @@
 .drink-image {
     max-width: 18rem;
 }
+
+header h1 {
+  font-size: large;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: xx-large;
+}
