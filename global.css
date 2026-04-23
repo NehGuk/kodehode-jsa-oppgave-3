@@ -104,3 +104,13 @@ animation: shake 420ms ease-in-out;
 animation-iteration-count: 1;
 /* will-change: transform; */
 }
+
+@media (max-width: 900px) {
+  body {
+    grid-template-rows: 3rem, 1fr, auto;
+  }
+
+  .logo-header {
+  max-width: 15rem;
+}
+}

@@ -6,8 +6,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-
 }
+
 .drink-container {
   /* edged corner on card */
   clip-path: polygon(0 0, calc(100% - 2rem) 0, 100% 2rem, 100% 100%, 0 100%);
@@ -33,7 +33,7 @@
 }
 
 .drink-container h3, .drink-container p {
-  padding: 0 0 .3rem 1rem;
+  padding: 0 1rem .3rem 1rem;
 }
 
 .btn {
@@ -65,9 +65,13 @@
   }
 
   #main-section {
-    max-width: 600px;
     margin: 1rem auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .drink-container {
+    gap: .5rem;
   }
 
   .drink-container .btn {
