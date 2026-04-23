@@ -15,7 +15,7 @@
     --text-color: #333;
     --main-font: 'Asap Condensed', sans-serif;
     --pair-font: 'Kreon', serif;
-    --transition: ease-in-out, 0.2s;
+    --transition: 0.2s ease-in-out;
 }
 
 body {
@@ -76,6 +76,12 @@ h3, h4, p, a {
   font-weight: 600;
   padding: 1rem 3rem;
   display: inline-block;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  opacity: 0.9;
+  transition: var(--transition);
 }
 
 .logo-header {
