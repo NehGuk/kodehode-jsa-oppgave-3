@@ -29,3 +29,5 @@ export const buildDrink = (content) => {
   drinkContainer.append(drinkImage, drinkCountryOfOrigin, containsCoffee, drinkRating, drinkDescription);
   document.title = `${drinkName.textContent} | CMR`
 };
+
+// Add loading animation later

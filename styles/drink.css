@@ -15,8 +15,7 @@ header h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  
+  gap: 1rem; 
 }
 
 .drink-image {
@@ -24,6 +23,7 @@ header h2 {
     border-top: 18px solid var(--accent-color);
 }
 
+/* Field labels for Country of origin, Rating and Caffeinated */
 .field {
   font-weight: 700;
 }
@@ -36,7 +36,9 @@ p {
 .drink-description {
   width: 100%;
   border: 1px solid var(--primary-color);
+  /* edged corner on card */
   clip-path: polygon(0 0, calc(100% - 1rem) 0, 100% 1rem, 100% 100%, 0 100%);
+  /* edged corner on card end */
   padding: 1rem;
   background-color: var(--primary-color);
 }
@@ -53,5 +55,4 @@ p {
   max-width: 90%;
   margin: 0 auto;
   }
-  
 }

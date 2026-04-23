@@ -27,3 +27,5 @@ export const buildDrinksList = (content) => {
     drinkContainer.append(drinkImage, drinkName, drinkRating, moreInfoLink);
   });
 };
+
+// Add loading animation later
