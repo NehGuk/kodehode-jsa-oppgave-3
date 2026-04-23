@@ -25,11 +25,16 @@
   /* edged corner on card */
   clip-path: polygon(0 0, calc(100% - 2rem) 0, 100% 2rem, 100% 100%, 0 100%);
   /* edged corner on card end*/
+  filter: saturate(.7);
+  transition: var(--transition);
 }
 
 .drink-container:hover {
   scale: 1.02;
   transition: var(--transition);
+  img {
+    filter: saturate(1);
+  }
 }
 
 .drink-container h3, .drink-container p {
