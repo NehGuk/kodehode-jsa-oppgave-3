@@ -25,6 +25,7 @@ body {
   display: grid;
   grid-template-rows: 9rem, 1fr, auto;
   min-height: 100dvh;
+  overflow-x: hidden;
 }
 
 header {

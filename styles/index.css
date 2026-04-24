@@ -55,7 +55,12 @@
 
 .extra-info {
   text-align: center;
-  margin: 3rem;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+* {
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 900px) {
@@ -76,5 +81,12 @@
   .drink-container .btn {
     text-align: center;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn {
+    font-size: small;
+    padding: 1rem .5rem;
   }
 }
