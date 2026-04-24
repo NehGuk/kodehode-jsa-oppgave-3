@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 # Nvm stuff
 HOME
 .nvm
+
+# OS stuff
+.DS_Store
