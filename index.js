@@ -21,7 +21,7 @@ const renderDrinksPage = async () => {
     drinkRating.textContent = `Rating: ${drink.rating}`;
     
     const viewDetailsLink = document.createElement("a");
-    viewDetailsLink.href = `./drink.html?id=/${drink.id}`;
+    viewDetailsLink.href = `./drink.html?id=${drink.id}`;
     viewDetailsLink.classList.add("btn");
     viewDetailsLink.textContent = "Details";
     

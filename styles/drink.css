@@ -33,7 +33,7 @@ p {
   line-height: 1.5rem;
 }
 
-.drink-description {
+.drink-review {
   width: 100%;
   border: 1px solid var(--primary-color);
   /* edged corner on card */
