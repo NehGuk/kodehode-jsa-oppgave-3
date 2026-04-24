@@ -15,12 +15,12 @@ header h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .drink-image {
-    max-width: 100%;
-    border-top: 18px solid var(--accent-color);
+  max-width: 100%;
+  border-top: 18px solid var(--accent-color);
 }
 
 /* Field labels for Country of origin, Rating and Caffeinated */
@@ -29,7 +29,7 @@ header h2 {
 }
 
 p {
-  font-size:large;
+  font-size: large;
   line-height: 1.5rem;
 }
 
@@ -52,7 +52,7 @@ p {
 
 @media (max-width: 900px) {
   main {
-  max-width: 90%;
-  margin: 0 auto;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
