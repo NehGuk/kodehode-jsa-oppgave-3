@@ -1,10 +1,9 @@
-
-import {getDrink} from "./modules/getDrink.js"
+import { getDrink } from "../modules/getDrink.js";
 
 const drinkHeader = document.querySelector("#drink-header")
 const drinkContainer = document.querySelector("#drink-container");
 
-const populateDrinkPage = async () => {
+const renderDrinkPage = async () => {
   // Gets drink ID to make the right API call
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
@@ -44,7 +43,7 @@ const populateDrinkPage = async () => {
   drinkContainer.append(drinkImage, drinkCountryOfOrigin, containsCoffee, drinkRating, drinkReview);
 }
   
-await populateDrinkPage();
+await renderDrinkPage();
    
 // TODO: Add loading animation later
 // TODO: Add buttons for Previous and Next drinks
