@@ -60,18 +60,6 @@
   max-width: 900px;
 }
 
-/* Makes sure overscrolling background at the bottom matches the footer colour */
-html::after {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 50%;
-  z-index: -1;
-  background-color: var(--accent-color);
-}
-
 @media (max-width: 900px) {
   main {
     padding: 1rem;

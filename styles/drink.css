@@ -50,18 +50,6 @@ p {
   margin: 3rem auto;
 }
 
-/* TODO: overscrolling colour to match footer colour */
-/* html::after {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 10%;
-  z-index: -1;
-  background-color: blue;
-} */
-
 @media (max-width: 900px) {
   main {
     max-width: 90%;
